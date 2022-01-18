@@ -20,4 +20,28 @@ public class DuplicatesInArray {
         }
         return false;
     }
+
+    public int floydsCycleDetection(int[] list) {
+
+        int slow = list[0];
+        int fast = list[0];
+
+        do {
+            slow = list[slow];
+            fast = list[list[fast]];
+        } while (slow != fast);
+
+        fast = list[0];
+
+        while (fast != slow) {
+            slow = list[slow];
+            fast = list[fast];
+        }
+
+        return slow;
+
+    }
+
+
+
 }

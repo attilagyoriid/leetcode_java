@@ -38,4 +38,11 @@ class DuplicatesInArrayTest {
         Assertions.assertThat(duplicatesInArray.containsDuplicate(nums)).isFalse();
 
     }
+
+    @Test
+    void floydsCycleDetection() {
+
+        final int[] nums = {1, 2, 3, 4 ,5, 2, 1};
+        System.out.println(duplicatesInArray.floydsCycleDetection(nums));
+    }
 }
