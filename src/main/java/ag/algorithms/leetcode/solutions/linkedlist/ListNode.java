@@ -1,10 +1,10 @@
 package ag.algorithms.leetcode.solutions.linkedlist;
 
-public class LinkNode {
+public class ListNode {
 
     public int value;
-    public LinkNode next;
-    public LinkNode(int value) {
+    public ListNode next;
+    public ListNode(int value) {
         this.value = value;
     }
 

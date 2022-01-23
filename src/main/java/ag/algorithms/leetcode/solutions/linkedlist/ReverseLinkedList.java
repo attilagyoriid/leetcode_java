@@ -2,12 +2,12 @@ package ag.algorithms.leetcode.solutions.linkedlist;
 
 public class ReverseLinkedList {
 
-    public LinkNode reverse(LinkNode head) {
-        LinkNode curr = head;
-        LinkNode prev = null;
+    public ListNode reverse(ListNode head) {
+        ListNode curr = head;
+        ListNode prev = null;
         while (curr != null) {
 
-            LinkNode next = curr.next;
+            ListNode next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
