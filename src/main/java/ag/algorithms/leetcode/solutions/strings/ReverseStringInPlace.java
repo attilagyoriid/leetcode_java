@@ -4,6 +4,10 @@ public class ReverseStringInPlace {
 
     public String reverse(String text) {
 
+        if (text == null || text.length() < 2) {
+            return text;
+        }
+
         int left = 0;
         int right = text.length()-1;
         char[] chars = text.toCharArray();
