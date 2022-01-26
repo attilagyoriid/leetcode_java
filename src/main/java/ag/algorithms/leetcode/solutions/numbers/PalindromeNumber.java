@@ -1,4 +1,4 @@
-package ag.algorithms.leetcode.solutions;
+package ag.algorithms.leetcode.solutions.numbers;
 
 public class PalindromeNumber {
 

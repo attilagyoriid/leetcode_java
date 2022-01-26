@@ -1,9 +1,7 @@
-package ag.algorithms.leetcode.solutions;
+package ag.algorithms.leetcode.solutions.numbers;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PalindromeNumberTest {
 
