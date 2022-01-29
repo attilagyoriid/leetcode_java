@@ -16,7 +16,7 @@ public class ValidPalindrome {
                 right--;
             }
 
-            if ((left < right && text.charAt(left++) != text.charAt(right--))) {
+            if ((left < right && Character.toLowerCase(text.charAt(left++)) != Character.toLowerCase(text.charAt(right--)))) {
                 return false;
             }
 

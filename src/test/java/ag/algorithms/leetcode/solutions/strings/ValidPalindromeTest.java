@@ -11,7 +11,7 @@ class ValidPalindromeTest {
     void isValid() {
 
         ValidPalindrome validPalindrome = new ValidPalindrome();
-        Assertions.assertThat(validPalindrome.isValid("this is a plaindrome   emordnialpa sis iht ")).isTrue();
+        Assertions.assertThat(validPalindrome.isValid("this is A plaindrome   emordnialpa sis iht ")).isTrue();
 
     }
 
