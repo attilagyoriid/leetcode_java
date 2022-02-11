@@ -27,4 +27,22 @@ class ValidParenthesesTest {
         ValidParentheses validParentheses = new ValidParentheses();
         Assertions.assertThat(validParentheses.isValid("[]({)}")).isFalse();
     }
+
+    @Test
+    void isValid2() {
+        ValidParentheses validParentheses = new ValidParentheses();
+        Assertions.assertThat(validParentheses.isValid2("[({})]")).isTrue();
+    }
+    @Test
+    void isValid2_2() {
+
+        ValidParentheses validParentheses = new ValidParentheses();
+        Assertions.assertThat(validParentheses.isValid2("[]({})")).isTrue();
+    }
+    @Test
+    void isValid2_Failure() {
+
+        ValidParentheses validParentheses = new ValidParentheses();
+        Assertions.assertThat(validParentheses.isValid2("[]({)}")).isFalse();
+    }
 }
