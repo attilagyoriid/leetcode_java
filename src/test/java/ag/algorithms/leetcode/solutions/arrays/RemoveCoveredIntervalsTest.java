@@ -20,4 +20,18 @@ class RemoveCoveredIntervalsTest {
         Assertions.assertThat(removeCoveredIntervals.getIntervalsWotCoveredRemoved(List.of(List.of(1, 3), List.of(1, 4), List.of(3, 6), List.of(2, 8))))
                 .isEqualTo(2);
     }
+
+    @Test
+    void getIntervalsWotCoveredRemoved2() {
+        RemoveCoveredIntervals removeCoveredIntervals = new RemoveCoveredIntervals();
+        Assertions.assertThat(removeCoveredIntervals.getIntervalsWotCoveredRemoved2(List.of(List.of(1, 4), List.of(3, 6), List.of(2, 8))))
+                .isEqualTo(2);
+    }
+
+    @Test
+    void getIntervalsWotCoveredRemoved2_withSameStartInterval() {
+        RemoveCoveredIntervals removeCoveredIntervals = new RemoveCoveredIntervals();
+        Assertions.assertThat(removeCoveredIntervals.getIntervalsWotCoveredRemoved2(List.of(List.of(1, 3), List.of(1, 4), List.of(3, 6), List.of(2, 8))))
+                .isEqualTo(2);
+    }
 }
