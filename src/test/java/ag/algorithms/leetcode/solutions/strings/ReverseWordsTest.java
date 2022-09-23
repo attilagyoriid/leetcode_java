@@ -10,8 +10,8 @@ class ReverseWordsTest {
     @Test
     void reverse() {
 
-        ReverseWords reverseWords = new ReverseWords();
-
-        System.out.println(reverseWords.reverse("Here We are born to"));
+//        ReverseWords reverseWords = new ReverseWords();
+//
+//        System.out.println(reverseWords.reverse("Here We are born to"));
     }
 }
